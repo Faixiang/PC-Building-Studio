@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#090d16" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23141d2a'/%3E%3Cpath d='M15 18h34v28H15z' fill='none' stroke='%239df5d1' stroke-width='4'/%3E%3Cpath d='M23 26h18v12H23z' fill='%239df5d1'/%3E%3C/svg%3E" />
+    <title>電腦萬能組裝站</title>
+  </head>
+  <body>
+    <main id="app">
+      <canvas id="scene" aria-label="可互動的 3D 電腦組裝場景"></canvas>
+      <header class="topbar">
+        <a class="brand" href="/" aria-label="電腦萬能組裝站首頁">
+          <span class="brand-mark">PC</span>
+          <span><strong>電腦萬能組裝站</strong><small>BUILD YOUR FIRST PC</small></span>
+        </a>
+        <span class="status"><i></i> 3D 工作台已就緒</span>
+      </header>
+      <section class="intro">
+        <p class="eyebrow">你的第一台電腦，從這裡開始</p>
+        <h1>像拼積木一樣，<br /><em>親手組一台電腦。</em></h1>
+        <p>不用懂術語，也不用怕裝錯。我們會一步一步，<br />帶你認識每個零件，完成屬於你的電腦。</p>
+        <button id="next-step" class="next-button" type="button"><span>下一步：選擇零件品牌</span><b>→</b></button>
+        <div class="hint"><span>↔</span> 拖曳旋轉視角 <b>·</b> <span>⌕</span> 滾輪縮放</div>
+      </section>
+      <aside class="stage-card">
+        <span class="stage-number">01</span>
+        <div><small>目前進度</small><strong>認識你的工作台</strong></div>
+      </aside>
+      <footer class="footer"><span>3D 即時互動</span><span>新手友善教學</span><span>自由品牌選配</span></footer>
+      <section id="picker" class="picker-overlay" hidden></section>
+      <dialog id="spec-modal" class="modal"></dialog>
+      <dialog id="prep-modal" class="modal"></dialog>
+      <dialog id="glossary-modal" class="modal"></dialog>
+      <dialog id="complete-modal" class="modal"></dialog>
+      <div id="loading"><span class="loader"></span><p>正在準備你的工作台…</p></div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

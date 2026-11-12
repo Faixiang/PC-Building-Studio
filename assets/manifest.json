@@ -1,0 +1,13 @@
+{
+  "case": {"model":"assets/models/case.glb","proceduralFallback":"createCase"},
+  "motherboard": {"model":"assets/models/motherboard.glb","proceduralFallback":"createMotherboard"},
+  "cpu": {"model":"assets/models/cpu.glb","proceduralFallback":"createCPU"},
+  "cooler": {"model":"assets/models/cooler.glb","proceduralFallback":"createCooler"},
+  "ram": {"model":"assets/models/ram.glb","proceduralFallback":"createRAM"},
+  "ssd": {"model":"assets/models/ssd.glb","proceduralFallback":"createSSD"},
+  "gpu": {"model":"assets/models/gpu.glb","proceduralFallback":"createGPU"},
+  "psu": {"model":"assets/models/psu.glb","proceduralFallback":"createPSU"},
+  "24pin": {"model":null,"proceduralFallback":"createCable"},
+  "cpu8pin": {"model":null,"proceduralFallback":"createCable"},
+  "pcie": {"model":null,"proceduralFallback":"createCable"}
+}
