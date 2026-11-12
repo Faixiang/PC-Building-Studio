@@ -10,6 +10,8 @@
 <br />
 
 <p align="center">
+  <a href="https://github.com/Faixiang/PC-Building-Studio/blob/main/LICENSE">
+    <img alt="MIT license" src="https://img.shields.io/badge/license-MIT-blue.svg" /></a>
   <a href="https://github.com/Faixiang/PC-Building-Studio/issues">
     <img alt="PRs welcome!" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat" /></a>
   <a href="https://threejs.org">
@@ -122,6 +124,14 @@ npm run build    # 打包到 dist/
 
 - 發現問題或想新增功能？[開 Issue](https://github.com/Faixiang/PC-Building-Studio/issues)。
 - 想貢獻程式碼？歡迎送出 Pull Request。
+
+## 授權
+
+本專案以 [MIT License](LICENSE) 釋出，Copyright (c) 2026 Faixiang。
+
+你可以自由使用、修改、合併、發佈、再授權與銷售，只需保留著作權聲明與授權條款。
+
+品牌名稱與商標屬於各自權利人，不在本授權範圍內。
 
 ## 素材授權
 
