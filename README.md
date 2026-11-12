@@ -1,20 +1,65 @@
-# 電腦萬能組裝站 · PC Building Studio
+<h1 align="center">電腦萬能組裝站</h1>
 
-用 3D 互動的方式，教完全沒接觸過電腦硬體的人，親手組一台電腦。
+<div align="center">
+  <h3>
+    用 3D 互動的方式，教完全沒接觸過電腦硬體的人，親手組一台電腦。<br />
+    拖曳零件、自動吸附、裝錯不會壞，也沒有時間壓力。<br />
+  </h3>
+</div>
 
-> 像拼樂高一樣簡單。拖曳零件、自動吸附、裝錯不會壞，也沒有時間壓力。
+<br />
 
----
+<p align="center">
+  <a href="https://github.com/Faixiang/PC-Building-Studio/issues">
+    <img alt="PRs welcome!" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat" /></a>
+  <a href="https://threejs.org">
+    <img alt="Three.js" src="https://img.shields.io/badge/Three.js-r180-black.svg" /></a>
+  <a href="https://vitejs.dev">
+    <img alt="Vite" src="https://img.shields.io/badge/Vite-7-646CFF.svg" /></a>
+  <a href="https://github.com/Faixiang/PC-Building-Studio">
+    <img alt="No backend" src="https://img.shields.io/badge/backend-none-blueviolet.svg" /></a>
+</p>
+
+<br />
+
+<div align="center">
+  <figure>
+    <img src="https://github.com/Faixiang/PC-Building-Studio/raw/main/docs/media/workbench.png" alt="組裝工作台" />
+    <figcaption>
+      <p align="center">
+        從零件抽屉取出零件，拖到場景中發光的位置，就會自動吸附對位。
+      </p>
+    </figcaption>
+  </figure>
+</div>
 
 ## 這是什麼
 
-一個純前端的 3D 裝機教學網站。使用者從零件抽屉取出零件，拖到場景中發光的位置就會自動吸附對位，跟著 10 個步驟走完，就能完成一台電腦。
+一個純前端的 3D 裝機教學網站。使用者跟著 10 個步驟走完，就能完成一台電腦。
 
-設計對象是**完全的新手**：所有術語都附白話解釋，每個零件都標示防呆方向，錯誤提示會說明具體做法而不是責備。
+設計對象是**完全的新手**：所有術語都附白話解釋，每個零件都標示防呆方向，錯誤提示會說明具體做法，而不是責備。
 
-## 目前功能
+## 功能
 
-### 教學流程（10 步）
+組裝流程支援：
+
+- 🧩&nbsp;零件抽屉 — 每步只取出當前零件，從卡片直接拖到插槽。
+- 🖱️&nbsp;拖曳自動吸附 — 靠近正確位置顯示半透明預覽，放開自動對位。
+- 🎯&nbsp;防呆方向提示 — 缺口、金手指、三角形標記都有視覺引導。
+- 🎬&nbsp;演示動畫 — 隨時重播示範，不改變安裝狀態。
+- 📊&nbsp;進度條 — 即時顯示完成百分比。
+
+教學內容支援：
+
+- 🏷️&nbsp;品牌選配 — 8 類零件可挑選市面品牌，結果貼在 3D 模型上。
+- 📋&nbsp;規格雙模式 — 新手模式與專業模式一鍵切換。
+- 💬&nbsp;參數三層說明 — 白話解釋、專業補充、安裝提醒。
+- 📖&nbsp;術語詞典 — 看不懂的詞在這裡變簡單。
+- ✅&nbsp;完成回顧 — 列出本次安裝的零件與選配清單。
+
+> ⚠️ 規格為教學示例，非特定品牌型號的真實數據。
+
+## 教學流程
 
 1. 安裝 CPU（開壓桿 → 對位放入 → 壓回固定桿）
 2. 安裝 CPU 散熱器（含散熱膏提示）
@@ -27,73 +72,15 @@
 9. 連接 CPU 8pin
 10. 連接顯卡 PCIe 供電
 
-### 零件抽屉
-
-零件不再一次全部攤在桌上，而是放在左側抽屉，每步只取出當前零件，從卡片直接拖到插槽。
-
-### 品牌選配
-
-開場先為 8 類零件挑選市面品牌（CPU、主機板、記憶體、SSD、顯示卡、電源、散熱器、機殼），選配結果會以文字與色塊貼在對應的 3D 模型上。
-
-### 規格雙模式
-
-每個零件附通用規格示例，可在「新手模式」與「專業模式」之間切換，每個參數都能展開三層說明（白話／專業補充／安裝提醒）。
-
-> ⚠️ 規格為教學示例，非特定品牌型號的真實數據。
-
-### 新手友善設計
-
-- 術語圖解小詞典
-- 裝機前準備課（靜電、拿零件的方式、操作方式）
-- 各步驟「新手小叮嚀」與常見錯誤提醒
-- 「演示給我看」動畫，可重複觀看
-- 進度條即時顯示完成百分比
-- 完成頁回顧本次安裝的零件與選配清單
-
-### 3D 模型
+## 3D 模型
 
 9 類半寫實通用模型：機殼、主機板、CPU、散熱器、記憶體、M.2 SSD、顯示卡、電源、供電線材。
 
-包含 PCB 走線貼圖、CPU 接點陣列、VRM 散熱鰭片、金手指與防呆缺口、雙面 DRAM 顆粒、風扇與散熱鰭片等細節。若日後找不到合適的免費素材庫模型，這些程式化模型即為回退方案。
+細節包含 PCB 走線貼圖、CPU 接點陣列、VRM 散熱鰭片、金手指與防呆缺口、雙面 DRAM 顆粒、風扇與散熱鰭片。
 
-## 技術
+若日後找不到合適的免費素材庫模型，這些程式化模型即為回退方案。
 
-- **Three.js** — 3D 渲染、OrbitControls、GLTFLoader（預留外部模型介面）
-- **Vite** — 開發伺服器與打包
-- **原生 JavaScript DOM** — UI 不需要框架
-- **Canvas 2D** — 程序化生成 PCB 走線、拉絲金屬、品牌貼花與標籤貼圖
-- **純前端** — 無後端、無資料庫
-
-## 專案結構
-
-```
-├─ index.html
-├─ vite.config.js
-├─ assets/
-│  ├─ brands.json      品牌資料庫（8 類零件）
-│  ├─ specs.json       規格示例（含新手／專業雙層說明）
-│  ├─ manifest.json    模型清單與程式化回退對應
-│  └─ CREDITS.md       素材授權記錄
-└─ src/
-   ├─ main.js          組裝流程主控
-   ├─ style.css
-   ├─ scene/setup.js           場景、燈光、相機
-   ├─ parts/
-   │  ├─ procedural.js         9 類程式化模型
-   │  ├─ loader.js             模型載入與回退
-   │  └─ branding.js           品牌貼花
-   ├─ interaction/drag.js      拖曳、吸附、動畫
-   ├─ tutorial/
-   │  ├─ steps.js              10 步教學資料
-   │  └─ camera.js             步驟運鏡
-   └─ ui/
-      ├─ picker.js             品牌選配頁
-      ├─ drawer.js             零件抽屉
-      ├─ panel.js              步驟面板、規格、完成頁
-      └─ specsPanel.js         規格雙模式
-```
-
-## 本地執行
+## 快速開始
 
 ```bash
 npm install
@@ -103,6 +90,39 @@ npm run build    # 打包到 dist/
 
 需求：Node.js 18 以上。
 
+## 技術
+
+- **Three.js** — 3D 渲染、OrbitControls、GLTFLoader
+- **Vite** — 開發伺服器與打包
+- **原生 JavaScript DOM** — UI 不需要框架
+- **Canvas 2D** — 程序化生成 PCB 走線、拉絲金屬、品牌貼花
+- **純前端** — 無後端、無資料庫
+
+## 專案結構
+
+```
+├─ index.html
+├─ vite.config.js
+├─ assets/
+│  ├─ brands.json      品牌資料庫（8 類零件）
+│  ├─ specs.json       規格示例
+│  ├─ manifest.json    模型清單與回退對應
+│  └─ CREDITS.md       素材授權記錄
+└─ src/
+   ├─ main.js          組裝流程主控
+   ├─ style.css
+   ├─ scene/           場景、燈光、相機
+   ├─ parts/           程式化模型、載入回退、品牌貼花
+   ├─ interaction/     拖曳、吸附、動畫
+   ├─ tutorial/        教學步驟、運鏡
+   └─ ui/              選配頁、抽屉、面板、規格
+```
+
+## 貢獻
+
+- 發現問題或想新增功能？[開 Issue](https://github.com/Faixiang/PC-Building-Studio/issues)。
+- 想貢獻程式碼？歡迎送出 Pull Request。
+
 ## 素材授權
 
 目前所有 3D 硬體均為本專案以 Three.js 幾何體建立的通用教學模型，未使用外部模型或商標圖檔。
@@ -111,11 +131,7 @@ npm run build    # 打包到 dist/
 
 ## 後續規劃
 
-- 從 Sketchfab、Poly Haven 等免費素材庫替換為寫實 GLB 模型（CC0 / CC-BY，逐件記錄授權）
+- 從 Sketchfab、Poly Haven 等免費素材庫替換為寫實 GLB 模型（CC0 / CC-BY）
 - 更多零件類別（一體式水冷、機殼風扇、SATA 硬碟）
 - 互動反饋強化（安裝到位的光效）
 - 無障礙支援（鍵盤操作、aria 標籤）
-
-## 開發狀態
-
-第一版已完成並通過驗證：10 步全流程可從頭走到完成頁，`npm run build` 成功，瀏覽器 0 console error。
